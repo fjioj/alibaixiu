@@ -1,0 +1,228 @@
+a {
+  font-size: 16px !important;
+  text-decoration: none !important;
+}
+ul {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+ul li {
+  list-style: none !important;
+}
+.col {
+  padding: 0 !important;
+}
+.row .col-md-2 {
+  padding-right: 15px !important;
+  box-sizing: border-box;
+}
+.col-md-7 {
+  margin: 0 15px;
+  box-sizing: border-box;
+}
+.col-md-3 {
+  position: relative;
+  float: left !important;
+  width: 25%;
+}
+/* 导航栏样式开始 */
+.header-first {
+  font-size: 18px !important;
+  padding-left: 0 !important;
+}
+/* 导航栏样式结束 */
+
+/* banner样式开始 */
+.logo {
+  position: relative;
+  height: 120px;
+  width: 100%;
+  background-color: #429ad9;
+}
+.logo a {
+  display: block;
+  height: 120px;
+  width: 100%;
+}
+.logo img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.logo span {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 26px;
+  text-align: center;
+  margin-top: -13px;
+  font-size: 22px;
+  color: #fff;
+}
+
+.classify-serve ul {
+  width: 100%;
+}
+.classify-serve ul li {
+  height: 50px;
+  width: 100%;
+  box-sizing: border-box !important;
+  background-color: #eeeeee;
+}
+.classify-serve ul li:hover {
+  background-color: #fff;
+}
+.classify-serve li a {
+  display: block;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  font-size: 16px;
+  padding-left: 30px;
+  color: #666;
+}
+.classify-serve a::before {
+  padding-right: 5px;
+}
+.ad {
+  width: 100%;
+  height: 276px;
+}
+
+.ad ul .ad-first {
+  width: 50%;
+  height: 266px;
+}
+.ad-first .item {
+  width: 100%;
+  height: 266px;
+  font-size: 16px;
+}
+
+.ad-first .item img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.ad-first .carousel-caption {
+  line-height: 41px !important;
+  font-size: 16px;
+  padding: 0 !important;
+}
+
+.ad li {
+  float: left;
+  height: 128px;
+  width: 25%;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.ad ul li > a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 128px;
+}
+.ad ul li a p,
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 41px;
+  width: 100%;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.ad li a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-right img {
+  display: block;
+  width: 260px;
+  height: 131px;
+}
+/* banner样式结束 */
+.col-md-2 a {
+  display: block;
+}
+.hot {
+  width: 260px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 0 20px 20px;
+}
+.hot span {
+  margin-top: 20px;
+  background-color: #337ab7;
+  color: #fff;
+  border-radius: 0;
+}
+.hot p {
+  font-size: 14px;
+  margin: 0 0 10px;
+  color: #666;
+  cursor: pointer;
+}
+.publish .row:first-child {
+  border-top: 1px solid #ccc;
+}
+
+.publish {
+  margin-bottom: 20px;
+}
+
+.publish .row {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+.publish .row p {
+  color: #777;
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+.publish .row .intr-text {
+  color: #333;
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (max-width: 991px) {
+  .classify-serve ul li {
+    float: left;
+    width: 20%;
+  }
+  .ad-first {
+    width: 50%;
+  }
+  .ad li {
+    width: 25%;
+  }
+  .col-md-7 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ad li a {
+    font-size: 14px;
+  }
+  /* 当我们处于超小屏幕下 第一个li宽度为100% 剩下的小li各占50% */
+  .ad .ad-first {
+    width: 100% !important;
+  }
+  .ad li {
+    width: 50%;
+  }
+  .publish h3 {
+    font-size: 14px;
+  }
+  .banner-right img {
+    width: 100%;
+  }
+}
